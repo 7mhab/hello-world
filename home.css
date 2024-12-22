@@ -58,21 +58,17 @@ Html {
   text-align: center;
   margin-top: 100px;
 }
+img {
+  margin: auto;
+  width: 100%;
+}
 a {
   color: black;
   text-decoration: none;
 }
-.fa-html5 {
-  color: #ff5900;
-}
-.fa-css3-alt {
-  color: #21c2d7;
-}
-.fa-square-js {
-  color: #fff700;
-}
-.fa-java {
-  color: #ff5900;
+.icon {
+  object-position: center;
+  width: 100%;
 }
 .btns > a {
   padding: 40px 40px 10px;
