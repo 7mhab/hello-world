@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Text Styling</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("wp.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-color: #f4f4f4;
+        animation: fadeIn 1s;
+        position: relative;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Background overlay */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: -1;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          #264de4,
+          #2965f1
+        ); /* CSS logo gradient */
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: #264de4;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background: #2965f1;
+        color: #ffffff;
+      }
+
+      section {
+        padding: 20px;
+        background: rgba(56, 56, 56, 0.8); /* More transparent background */
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+        color: #ffffff; /* Font color change */
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #dddddd;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #5382a1;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- Background overlay -->
+
+    <header>
+      <h1>Text Styling</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">&lt;Home&gt;</a>
+      <a href="css.html">Introduction</a>
+      <a href="text-styling.html">Text Styling</a>
+      <a href="colors-backgrounds.html">Colors & Backgrounds</a>
+      <a href="responsive-design.html">Responsive Design</a>
+    </nav>
+
+    <section id="text-styling">
+      <h2>Text Styling</h2>
+      <p>
+        Text styling in CSS involves changing the appearance of text on a
+        webpage. Properties such as color, font-size, font-family, font-weight,
+        text-decoration, and text-align can be used to enhance the readability
+        and aesthetic of the content.
+      </p>
+
+      <section id="P1">
+        <h3>1. Changing Text Color</h3>
+        <pre><code>h1 {
+    color: blue;
+}</code></pre>
+        <p>This sets the text color of all <code>h1</code> elements to blue.</p>
+      </section>
+
+      <section id="P2">
+        <h3>2. Changing Font Size</h3>
+        <pre><code>p {
+    font-size: 16px;
+}</code></pre>
+        <p>
+          This sets the font size of all <code>p</code> elements to 16 pixels.
+        </p>
+      </section>
+
+      <section id="P3">
+        <h3>3. Changing Font Family</h3>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+}</code></pre>
+        <p>
+          This sets the font family of the entire document to Arial or the
+          default sans-serif font.
+        </p>
+      </section>
+
+      <section id="P4">
+        <h3>4. Changing Font Weight</h3>
+        <pre><code>h2 {
+    font-weight: bold;
+}</code></pre>
+        <p>This makes the text of all <code>h2</code> elements bold.</p>
+      </section>
+
+      <section id="P5">
+        <h3>5. Text Decoration</h3>
+        <pre><code>a {
+    text-decoration: underline;
+}</code></pre>
+        <p>This adds an underline to all <code>a</code> (anchor) elements.</p>
+      </section>
+
+      <section id="P6">
+        <h3>6. Text Alignment</h3>
+        <pre><code>h3 {
+    text-align: center;
+}</code></pre>
+        <p>This centers the text of all <code>h3</code> elements.</p>
+      </section>
+
+      <section id="P7">
+        <h3>7. Text Transformation</h3>
+        <pre><code>p {
+    text-transform: uppercase;
+}</code></pre>
+        <p>
+          This converts the text of all <code>p</code> elements to uppercase
+          letters.
+        </p>
+      </section>
+
+      <section id="P8">
+        <h3>8. Line Height</h3>
+        <pre><code>p {
+    line-height: 1.5;
+}</code></pre>
+        <p>
+          This sets the line height of all <code>p</code> elements to 1.5 times
+          the font size.
+        </p>
+      </section>
+
+      <section id="P9">
+        <h3>9. Letter Spacing</h3>
+        <pre><code>h1 {
+    letter-spacing: 2px;
+}</code></pre>
+        <p>
+          This adds 2 pixels of space between the letters of all
+          <code>h1</code> elements.
+        </p>
+      </section>
+
+      <section id="P10">
+        <h3>10. Word Spacing</h3>
+        <pre><code>p {
+    word-spacing: 4px;
+}</code></pre>
+        <p>
+          This adds 4 pixels of space between the words of all
+          <code>p</code> elements.
+        </p>
+      </section>
+    </section>
+  </body>
+</html>

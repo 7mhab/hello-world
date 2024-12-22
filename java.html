@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Learn Java</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("wp.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        background-color: #f4f4f4;
+        animation: fadeIn 1s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: -1;
+      }
+
+      header {
+        background: #ff6a00;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background: #ff6a00;
+        color: #ffffff;
+      }
+
+      section {
+        padding: 20px;
+        background: #3838389e;
+        margin: 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: 250px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border: 1px solid #dddddd;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #dddddd;
+        color: #ffffff;
+      }
+
+      th {
+        background-color: #3838389e;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Background overlay -->
+
+    <header>
+      <h1>Welcome to Java Programming</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="java.html">Learn Java</a>
+      <a href="concept.html">Concepts of Java</a>
+      <a href="codestyle.html">Code Style</a>
+    </nav>
+    <section id="what-is-java">
+      <h2>What is Java?</h2>
+      <p>
+        Java is a high-level, class-based, object-oriented programming language
+        that is designed to have as few implementation dependencies as possible.
+        It is a general-purpose programming language that is widely used for
+        building enterprise-scale applications.
+      </p>
+      <img
+        src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png"
+        alt="Java Logo"
+      />
+    </section>
+    <section id="why-we-use-Java?">
+      <h2>Why We Use Java?</h2>
+      <li>
+        We use Java because of its popularity and wide adoption in the industry.
+      </li>
+      <li>Its job opportunities is high and more available than others.</li>
+      <li>It integrates with other technologies</li>
+      <li>Powerful security and robustness</li>
+    </section>
+    <section id="features">
+      <h2>Features of Java</h2>
+      <li>Platform Independence</li>
+      <li>Object-Oriented</li>
+      <li>Robust and Secure</li>
+      <li>Multithreaded</li>
+      <li>High Performance</li>
+    </section>
+    <section id="advantages-of-java">
+      <h2>Advantages of Java</h2>
+      <li>Java has strong memory managment and application stability</li>
+      <li>Java has large community of developers</li>
+      <li>
+        Java maintains backward compatibility, allowing older Java applications
+        to run on newer versions of the Java platform without modification.
+      </li>
+    </section>
+    <section id="disadvantages-of-java">
+      <h2>Disadvantages of Java</h2>
+      <li>Java applications are slow compared to native applications</li>
+      <li>Java consumes more memory than others</li>
+      <li>Java is not suitable for real-time applications</li>
+    </section>
+    <section id="java-versions">
+      <h2>Java Versions</h2>
+      <table>
+        <tr>
+          <th>Version</th>
+          <th>Release Date</th>
+          <th>Notable Features</th>
+        </tr>
+        <tr>
+          <td>Java 1.0</td>
+          <td>1996</td>
+          <td>First version, introduced applets</td>
+        </tr>
+        <tr>
+          <td>Java 2</td>
+          <td>1998</td>
+          <td>Introduced Swing, Collections Framework</td>
+        </tr>
+        <tr>
+          <td>Java 5</td>
+          <td>2004</td>
+          <td>Generics, Annotations, Enumerated types</td>
+        </tr>
+        <tr>
+          <td>Java 8</td>
+          <td>2014</td>
+          <td>Lambda expressions,</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Colors & Backgrounds</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("wp.jpg") no-repeat center center fixed;
+        background-size: cover;
+        background-color: #f4f4f4;
+        animation: fadeIn 1s;
+        position: relative;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Background overlay */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: -1;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          #264de4,
+          #2965f1
+        ); /* CSS logo gradient */
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: #264de4;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background: #2965f1;
+        color: #ffffff;
+      }
+
+      section {
+        padding: 20px;
+        background: rgba(56, 56, 56, 0.8); /* More transparent background */
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+        color: #ffffff; /* Font color change */
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #dddddd;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #5382a1;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- Background overlay -->
+
+    <header>
+      <h1>Colors & Backgrounds</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">&lt;Home&gt;</a>
+      <a href="css.html">Introduction</a>
+      <a href="text-styling.html">Text Styling</a>
+      <a href="colors-backgrounds.html">Colors & Backgrounds</a>
+      <a href="responsive-design.html">Responsive Design</a>
+    </nav>
+
+    <section id="colors-backgrounds">
+      <h2>Colors & Backgrounds</h2>
+      <p>
+        Colors and backgrounds in CSS can be controlled using properties such as
+        color, background-color, background-image, background-repeat, and
+        background-size. These properties allow for the customization of the
+        foreground and background elements to create visually appealing designs.
+      </p>
+
+      <section id="C1">
+        <h3>1. Setting Text Color</h3>
+        <pre><code>p {
+    color: #ff0000;
+}</code></pre>
+        <p>
+          This sets the text color of all <code>p</code> elements to red using a
+          hex code.
+        </p>
+      </section>
+
+      <section id="C2">
+        <h3>2. Setting Background Color</h3>
+        <pre><code>body {
+    background-color: #f0f0f0;
+}</code></pre>
+        <p>
+          This sets the background color of the entire document to a light gray
+          color.
+        </p>
+      </section>
+
+      <section id="C3">
+        <h3>3. Setting Background Image</h3>
+        <pre><code>div {
+    background-image: url('background.jpg');
+}</code></pre>
+        <p>This sets a background image for all <code>div</code> elements.</p>
+      </section>
+
+      <section id="C4">
+        <h3>4. Background Repeat</h3>
+        <pre><code>div {
+    background-repeat: no-repeat;
+}</code></pre>
+        <p>This ensures that the background image does not repeat.</p>
+      </section>
+
+      <section id="C5">
+        <h3>5. Background Size</h3>
+        <pre><code>div {
+    background-size: cover;
+}</code></pre>
+        <p>
+          This scales the background image to cover the entire container, while
+          maintaining its aspect ratio.
+        </p>
+      </section>
+
+      <section id="C6">
+        <h3>6. Background Position</h3>
+        <pre><code>div {
+    background-position: center;
+}</code></pre>
+        <p>
+          This positions the background image at the center of the container.
+        </p>
+      </section>
+
+      <section id="C7">
+        <h3>7. Using RGBA for Background Colors</h3>
+        <pre><code>div {
+    background-color: rgba(255, 0, 0, 0.5);
+}</code></pre>
+        <p>
+          This sets the background color to red with 50% opacity using RGBA.
+        </p>
+      </section>
+
+      <section id="C8">
+        <h3>8. Using Gradients</h3>
+        <pre><code>div {
+    background: linear-gradient(to right, red, yellow);
+}</code></pre>
+        <p>
+          This creates a linear gradient background that transitions from red to
+          yellow.
+        </p>
+      </section>
+    </section>
+  </body>
+</html>

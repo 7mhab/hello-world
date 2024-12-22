@@ -1,0 +1,191 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Learn JavaScript</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s;
+            background-image: url(wp.jpg);
+            background-repeat: no-repeat no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: #fbff00b6;
+            color: #ffffff;
+            padding: 10px ;
+            text-align: center;
+        
+         margin: 0 15px;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 15px;
+            
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fbff00;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #fbff00;
+            color: #000000;
+        }
+
+        section {
+            padding: 20px;
+            background: #3939399e;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: slideIn 0.9s forwards;
+            color: #ffffff;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        img {
+            max-width: 100%;
+            height: 250px;
+            display:block;
+            margin-left:auto;
+            margin-right:0;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #dddddd;
+            color: #ffffff;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #9ca153a2;
+            color: white;
+        }
+        hr{
+            border: 1px solid #9ca153a2;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Welcome to JavaScript </h2> 
+</header>
+
+<nav>
+    <a href="index.html"> <b>&lt;Home&gt;</b> </a>
+    <a href="#header" > <b>JavaScript</b> </a>
+    <a href="function&struct.html"><b>Functions & Structures</b></a>
+    <a href="variables&dt.html"><b>Variables & Data Types</b></a>
+   
+    
+</nav>
+
+<section id="what-is-javaScript">
+    <h2>What is JavaScript ?</h2>
+    <p>JavaScript is a scripting language used to develop web pages. Developed in Netscape, JS allows developers to create a dynamic and interactive web page to interact with visitors and execute complex actions. It also enables users to load content into a document without reloading the entire page.</p>
+    
+    <img src="download.jpg"  alt="Java Logo">
+</section>
+<hr>
+<section id="features">
+    <h2>Features of JavaScript</h2>
+        <li>Dynamic typing</li>
+        <li>Case sensitive</li>
+        <li>Event handling</li>
+        <li>Client-side validations</li>
+        <li>Control statements</li>
+        <li>Prototype</li>
+        <li> Date and time</li>
+</section>
+<hr>
+<section id="Advantages of JavaScript">
+    <h2>Advantages Of JavaScript</h2>
+            <li>Speed</li>
+            <li>Reduces load on the server</li>
+            <li>Ease of use</li>
+            <li>Extended functionality</li>
+            <li>Rich Interface</li>
+
+</section>
+<hr>
+<section id="javaScript-versions">
+    <h2>JavaScript Versions</h2>
+    <table>
+        <tr>
+            <th>Version</th>
+            <th>Release Date</th>
+            <th>Notable Features</th>
+        </tr>
+        <tr>
+            <td>ECMAScript 1</td>
+            <td>1997</td>
+            <td>Initial Release</td>
+        </tr>
+        <tr>
+            <td>ECMAScript 2</td>
+            <td>1998</td>
+            <td>Minor Editorial Changes</td>
+        </tr>
+        <tr>
+            <td>ECMAScript 2019</td>
+            <td>2019</td>
+            <td>Array.flat(), Array.flatMap() , Array.sort is now stable</td>
+        </tr>
+        <tr>
+            <td>ECMAScript 2023</td>
+            <td>2023</td>
+            <td>toSorted method , toReversed method , findLast, and findLastIndex methods on Array.prototype and TypedArray.prototypet </td>
+            </tr>
+        </section>
+        
+    </section>
+    
+</section>
+
+
+
+    </body>
+        

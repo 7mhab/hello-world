@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Learn Java</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("wp.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        background-color: #f4f4f4;
+        animation: fadeIn 1s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: -1;
+      }
+
+      header {
+        background: #ff6a00;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background: #ff6a00;
+        color: #ffffff;
+      }
+
+      section {
+        padding: 20px;
+        background: #3838389e;
+        margin: 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <!-- Background overlay -->
+
+    <header>
+      <h1>Concepts of Java</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="java.html">Learn Java</a>
+      <a href="concept.html">Concepts of Java</a>
+      <a href="codestyle.html">Code Style</a>
+    </nav>
+
+    <section id="what-is-java-concepts">
+      <h2>What is Java Concepts?</h2>
+      <p>
+        Java is a versatile programming language that incorporates several key
+        concepts, particularly focusing on Object-Oriented Programming (OOP).
+        Here are the fundamental concepts of Java:
+      </p>
+    </section>
+
+    <section id="object-oriented-programming-concepts">
+      <h2>Object-Oriented Programming(OOP)Concepts</h2>
+      <li><strong>Encapsulation:</strong></li>
+      <li>
+        Bundles the data (attributes) and methods (functions) that operate on
+        the data into a single unit, or class.
+      </li>
+      <li>
+        Protects the data from outside interference and misuse by restricting
+        access to certain components.
+      </li>
+      <p></p>
+      <li><strong>Abstraction:</strong></li>
+      <li>
+        Hides complex implementation details and shows only the essential
+        features of an object.
+      </li>
+      <li>Achieved through abstract classes and interfaces.</li>
+      <p></p>
+      <li><strong>Inheritance:</strong></li>
+      <li>
+        Allows one class to inherit the properties and behavior of another
+        class.
+      </li>
+      <li>
+        Promotes code reusability and establishes a hierarchical relationship
+        between classes.
+      </li>
+      <p></p>
+      <li><strong>Polymorphism:</strong></li>
+      <li>
+        Enables a single interface to represent different underlying forms (data
+        types).
+      </li>
+      <li>
+        Achieved through method overloading (compile-time polymorphism) and
+        method overriding (runtime polymorphism).
+      </li>
+    </section>
+
+    <section id="additional-java-concepts">
+      <h2>Additional Java Concepts</h2>
+      <li><strong>Classes and Objects:</strong></li>
+      <li>
+        A class is a blueprint for creating objects, which are instances of
+        classes.
+      </li>
+      <li>
+        Objects represent real-world entities and have attributes and behaviors.
+      </li>
+      <p></p>
+      <li><strong>Constructors:</strong></li>
+      <li>Special methods invoked when an object is created.</li>
+      <li>Used to initialize objects with specific values.</li>
+      <p></p>
+      <li><strong>Interfaces:</strong></li>
+      <li>
+        A reference type in Java, similar to a class, that can contain only
+        constants, method signatures, default methods, static methods, and
+        nested types.
+      </li>
+      <li>Used to achieve abstraction and multiple inheritance..</li>
+      <p></p>
+      <li><strong>Packages:</strong></li>
+      <li>
+        A namespace that organizes a set of related classes and interfaces.
+      </li>
+      <li>Helps in avoiding name conflicts and controlling access.</li>
+    </section>
+
+    <section id="Functional-Programming-Aspects">
+      <h2>Functional Programming Aspects</h2>
+      <li><strong>Lambda Expressions:</strong></li>
+      <li>
+        Introduced in Java 8, allowing you to express instances of single-method
+        interfaces (functional interfaces) more concisely.
+      </li>
+      <p></p>
+      <li><strong>Functional Interfaces:</strong></li>
+      <li>
+        Interfaces with a single abstract method (SAM), used to define a
+        functional interface.
+      </li>
+    </section>
+
+    <section id="Java-Collections-Framework">
+      <h2>Java Collections Framework</h2>
+      <li><strong>Collection Interface:</strong></li>
+      <li>
+        A framework that provides an architecture to store and manipulate a
+        group of objects.
+      </li>
+      <li>
+        Includes interfaces like List, Set, and Map, and classes like ArrayList,
+        HashSet, and HashMap.
+      </li>
+    </section>
+    <section id="Exception-Handling">
+      <h2>Exception Handling</h2>
+      <li><strong>Try-Catch Block:</strong></li>
+      <li>
+        Used to handle exceptions that occur during the execution of a program.
+      </li>
+      <li>
+        Mechanism to handle runtime errors, allowing the program to continue
+        execution.
+      </li>
+      <p></p>
+      <li><strong>Checked Exceptions:</strong></li>
+      <li>
+        Exceptions that must be either caught or declared in the method or class
+        that throws them.
+      </li>
+      <li>
+        Examples of checked exceptions include IOException and SQLException.
+      </li>
+      <p></p>
+      <li><strong>Unchecked Exceptions:</strong></li>
+      <li>
+        Exceptions that do not need to be caught or declared, such as
+        NullPointerException and Array IndexOutOfBoundsException.
+      </li>
+      <p></p>
+      <li><strong>Throwing Exceptions:</strong></li>
+      <li>Using the 'throw' keyword to explicitly throw an exception.</li>
+    </section>
+  </body>
+</html>

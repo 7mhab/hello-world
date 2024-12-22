@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Learn Java</title>
+   <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('wp.jpg') no-repeat center center fixed;
+  background-size:cover ;
+  position: relative;
+  background-color: #f4f4f4;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1; }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+header {
+  background: #ff6a00;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #ff6a00;
+  color: #ffffff;
+}
+
+section {
+  padding: 20px;
+  background: #3838389e;
+  margin: 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+   </style>
+  </head>
+  
+  <body>
+    
+    <div class="overlay"></div> <!-- Background overlay -->
+    
+    <header>
+      <h1>Code Style</h1>
+    </header>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="java.html">Learn Java</a>
+      <a href="concept.html">Concepts of Java</a>
+      <a href="codestyle.html">Code Style</a>
+    </nav>
+    
+    <section id="java-code-style-overview">
+      <h2>Java Code Style Overview</h2>
+      <p>
+        Java code style refers to the conventions and guidelines that developers follow to write clean, readable, and maintainable code. Adhering to a consistent style helps improve collaboration among team members and enhances the overall quality of the codebase. Here are some key aspects of Java code style:
+      </p>
+    </section>
+   
+    <section id="Naming-conventions">
+      <h2>Naming Conventions</h2>
+      <li><strong>Classes:</strong>Use UpperCamelCase. For example, 'MyClass', 'CustomerOrder'.</li>
+      <p></p>
+      <li><strong>Methods:</strong>Use lowerCamelCase. For example, 'calculateTotal()'', 'sendEmail()''.</li>
+      <p></p>
+      <li><strong>Variables:</strong>Use lowerCamelCase. For example, 'totalAmount', 'userName'.</li>
+      <p></p>
+      <li><strong>Constants:</strong>Use ALL_CAPS with underscores. For example, 'MAX_SIZE', 'DEFAULT_TIMEOUT'.</li>
+      <p></p>
+      <li><strong>Package Names:</strong>Use all lowercase letters, typically in reverse domain name format. For example, 'com.example.project'.</li>
+    </section>
+    
+    <section id="Formatting-Guidelines">
+      <h2>Formatting Guidelines</h2>
+      <li><strong>Indentation:</strong>Use 4 spaces for indentation. Avoid using tabs.</li>
+        <li>Objects represent real-world entities and have attributes and behaviors.</li>
+        <p></p>
+        <li><strong>Line Length:</strong>Limit lines to a maximum of 100 characters. If a line exceeds this limit, wrap it at a higher syntactic level.</li>
+        <p></p>
+        <li><strong>Braces:</strong>Place opening braces on the same line as the statement. For example:</li>  
+        <p>
+            if (condition) { </p>
+               <p> // code block</p>
+            <p>}</p>
+        </p>
+        <p></p>
+        <li><strong>Blank Lines:</strong>Use blank lines to separate logical sections of code. A single blank line can improve readability.</li>
+    </section>
+    
+    <section id="Commenting-Practices">
+      <h2>Commenting Practices</h2>
+      <li><strong>Javadoc Comments:</strong>Use Javadoc for public classes and methods. Describe what the class or method does, including parameters and return values. For example:</li>
+      <p>
+        /** </p>
+     <p> * Calculates the total price of items in the cart.</p>
+      <p>* @return total price as a double.</p>
+      <p>*/</p>
+      <p>public double calculateTotal() {</p>
+    <p>// implementation
+<p>}</p>
+      </p>
+      <p></p>
+      <li><strong>Inline Comments:</strong>Use inline comments sparingly to explain complex logic. Avoid obvious comments.</li>
+      </section>
+      
+      <section id="Code-Structure">
+        <h2>Code Structure</h2>
+        <li><strong>Method Length:</strong>Keep methods short and focused. Ideally, a method should not exceed 20-50 lines. If it does, consider breaking it into smaller methods.</li>
+        <p></p>
+        <li><strong>Local Variables:</strong>Declare local variables close to their first use to enhance readability.</li>
+        <p></p>
+        <li><strong>Class Structure:</strong>Organize classes into logical packages and modules.</li>
+        <p></p>
+        <li><strong>Exception Handling:</strong>Handle exceptions appropriately. Avoid empty catch blocks and catch specific exceptions rather than generic ones.</li>
+        </section>
+        
+        <section id="Import-Statements">
+          <h2>Import Statements</h2>
+          <li><strong>Ordering:</strong>import statements in the following order:</li>
+          <li>Static imports</li>
+          <li>Non-static imports</li>
+          <li>Each block should be separated by a blank line.</li>
+          <li><strong>Wildcard Imports:</strong>Avoid using wildcard imports (e.g., import java.util.*;). Instead, import only the classes you need.</li>
+        </section>
+
+        <section id="code-organization">
+          <h2>Code Organization</h2>
+          <li><strong>Separate Concerns:</strong>Separate concerns into different classes or methods. For example, a class that handles user authentication should not also handle data storage.</li>
+          <p></p>
+          <li><strong>Use Interfaces:</strong>Use interfaces to define contracts and promote loose coupling.</li>
+          <p></p>
+          <li><strong>Use Dependency Injection:</strong>Use dependency injection to decouple classes and make them more testable.</li>
+          <p></p>
+          </section>
+
+          <section id="code-readability">
+            <h2>Code Readability</h2>
+            <li><strong>Variable Names:</strong>Use descriptive variable names. Avoid single-letter variable names unless they are obvious (e.g., i for index).</li>
+            <p></p>
+            <li><strong>Method Names:</strong>Use descriptive method names. Avoid using verbs like methods that perform actions.</li>
+            <p></p>
+            <li><strong>Code Formatting:</strong>Use consistent code formatting throughout the codebase. This includes indentation, spacing, and line wrapping.</li>
+            <p></p>
+            <li><strong>Comments:</strong>Use comments to explain complex logic, but avoid excessively commenting simple code.</li>
+            </section>
+          
+            <section id="consistency">
+              <h2>Consistency</h2>
+              <li><strong>Follow Existing Style:</strong>When modifying existing code, adhere to the style used in that codebase to maintain consistency.</li>
+              <p></p>
+              <li><strong>Use Consistent Naming Conventions:</strong>Use consistent naming conventions throughout the codebase.</li>
+              <p></p>
+              <li><strong>Use Consistent Code Formatting:</strong>Use consistent code formatting throughout the codebase.</li>
+              <p></p>
+              <li><strong>Use Consistent Exception Handling:</strong>Use consistent exception handling throughout the codebase.</li>
+              <p></p>
+              <li><strong>Use Tools:</strong>Consider using code formatters and linters to enforce style guidelines automatically.</li>
+            </section>
+    </body>
+      </html>

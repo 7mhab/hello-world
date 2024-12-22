@@ -1,0 +1,107 @@
+body {
+  font-size: 40px;
+  font-family: sans-serif;
+  background-image: url("wp.jpg");
+  background-repeat: no-repeat no-repeat;
+  color: white;
+  background-position: center center;
+  background-size: cover;
+  min-height: 110vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 0.9s forwards;
+}
+Html {
+  scroll-behavior: smooth;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.content {
+  max-width: 80%;
+  background-color: #3838389e;
+  padding: 40px;
+  border-radius: 15px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+.title h1 {
+  font-weight: bold;
+  margin: 0;
+}
+.title .date {
+  display: block;
+  margin-top: 50px;
+}
+.h1 {
+  margin-top: 100px;
+}
+.hw {
+  text-align: center;
+}
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 100px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.fa-html5 {
+  color: #ff5900;
+}
+.fa-css3-alt {
+  color: #21c2d7;
+}
+.fa-square-js {
+  color: #fff700;
+}
+.fa-java {
+  color: #ff5900;
+}
+.btns > a {
+  padding: 40px 40px 10px;
+  border: solid white;
+  border-radius: 20px;
+  width: 100px;
+  transition: 0.4s;
+}
+.btns p {
+  margin-bottom: 0;
+  color: white;
+}
+.close {
+  direction: rtl;
+}
+.close a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  bottom: 13px;
+}
+.close a:visited {
+  color: white;
+}
+
+.btns > a:hover {
+  background-color: white;
+}
+.btns > a:hover p {
+  color: black;
+}

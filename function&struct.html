@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function & Structure</title>
+    <style>
+       body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s;
+            background-image: url(wp.jpg);
+            background-repeat: no-repeat no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+        background: #fbff00b6;
+        color: #ffffff;
+        padding: 10px ;
+        text-align: center;
+    
+     margin: 0 15px;
+        color: #000000;
+        text-decoration: none;
+        padding: 10px 15px;
+        
+        transition: background 0.3s, color 0.3s;
+    }
+    section{
+        color:#ffffff;
+        padding :10px;
+        background-color: #3939399e;
+        animation: slideIn 0.9s forwards;
+    }
+    @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+#decl{
+    background-color: #3939399e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+}
+#exp{
+    background-color: #3939399e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+
+}
+#arrow{
+    background-color: #3939399e;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+
+
+}
+#if{
+    
+    background-color: #3939399e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+
+
+}
+#switch{
+    
+    background-color: #3939399e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+
+
+}
+#loop{
+    background-color: #3939399e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width:80%;
+
+}
+nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fbff00;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #fbff00b6;
+            color: #000000;
+        }
+        hr{
+            border: 1px solid #9ca153a2;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Functions and Structure </h2>
+        
+    </header>
+    <nav>
+        <a href="index.html"> <b>&lt;Home&gt;</b> </a>
+        <a href="javaScript1.html#header" > <b>JavaScript</b> </a>
+        <a href="function&struct.html"><b>Functions & Structures</b></a>
+        <a href="variables&dt.html"><b>Variables&Data Types</b></a>
+        
+        
+    </nav>
+    <section>
+        <h2>Functions & Structures :</h2>
+        <p><b>  Description:</b>Functions are blocks of code designed to perform specific tasks. They can be defined using the function keyword or arrow function syntax (=>).</p>
+        <p><b>Structure:</b>Control structures manage the flow of the program: if, else if , else ,switch</p>
+
+
+        </p>
+    </section>
+    <section id="decl">
+        JavaScript  (Function Decleration)
+        <hr>
+        <br>
+        function greet() { <br>
+            console.log('Hello, World!'); <br>
+        }
+    </section>
+    <section id="exp">
+        JavaScript  (Function Expressions)
+        <hr>
+        <br>
+        const greet = function() {<br>
+             console.log('Hello, World!'); <br>
+             };
+    </section>
+    <section id="arrow">
+        JavaScript  (Arrow Function)
+        <hr>
+        <br>
+        const greet = () => {<br>
+             console.log('Hello, World!'); <br>
+             };
+    </section>
+    
+    <hr id="hr1">
+    <section >
+        <h1>Structure :</h1>
+        Structure:Control structures manage the flow of the program: if, else if , else ,switch
+    </section>
+    <hr>
+   <section id="if">
+    JavaScript  (if , else if , else)
+    <hr id="hr2">
+    if (condition) {<br>    // code to be executed if condition is true <br>
+    } else if (anotherCondition) { <br>
+                // code to be executed if anotherCondition is true }<br> else {<br>
+                 // code to be executed if none of the conditions are true <br>
+             }
+    
+</section>
+<section id="switch">
+    JavaScript  (Switch)
+    <hr>
+    
+        
+        
+        switch(expression) {<br>
+             case x: <br>
+             // code block break;<br>
+              case y:<br>
+               // code block <br>
+               break;<br>
+                default:<br> 
+                // code block <br>}
+        
+    
+    
+</section>
+<section id="loop">
+    JavaScript  (Loop)
+    <hr>
+    
+        
+    for (let i = 0; i &lt: 5; i++) { <br> 
+        console.log(i); <br>
+    }
+        
+    
+    
+</section>
+</body>
+</html>

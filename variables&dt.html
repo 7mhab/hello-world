@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables & DataTypes</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        animation: fadeIn 1s;
+        background-image: url(wp.jpg);
+        background-repeat: no-repeat no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      header {
+        background: #fbff00b6;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+
+        margin: 0 15px;
+        color: #000000;
+        text-decoration: none;
+        padding: 10px 15px;
+
+        transition: background 0.3s, color 0.3s;
+      }
+      section {
+        padding: 10px;
+        color: #ffffff;
+        background-color: #3939399e;
+        animation: slideIn 0.9s forwards;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      li {
+        padding: 10px;
+      }
+      nav {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 15px;
+        color: #fbff00;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background: #fbff00b6;
+        color: #000000;
+      }
+      hr {
+        border: 1px solid #9ca153a2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Variables & Data Types</h2>
+    </header>
+    <nav>
+      <a href="index.html"> <b>&lt;Home&gt;</b> </a>
+      <a href="javaScript1.html#header"> <b>JavaScript</b> </a>
+      <a href="function&struct.html"><b>Functions & Structures</b></a>
+      <a href="variables&dt.html"><b>Variables&Data Types</b></a>
+    </nav>
+    <section id="intro">
+      <h3>Variables & Data Types</h3>
+      <p>
+        Description: Variables in JavaScript store data that can be manipulated
+        and referenced later. They can be declared using var, let, or const.
+      </p>
+    </section>
+    <hr />
+    <section id="var">
+      <h1>1.Variables</h1>
+      <ul>
+        <h2>Details:</h2>
+        <li>
+          <b>var:</b> Has function scope. Variables declared with var are
+          hoisted to the top of their scope and can be re-declared and updated.
+        </li>
+        <li>
+          <b>let:</b> Has block scope. Introduced in ES6, let allows you to
+          declare variables that are limited in scope to the block, statement,
+          or expression where they are used.
+        </li>
+        <li>
+          <b>const:</b>Also has block scope. Variables declared with const
+          cannot be re-assigned, which means the reference to the variable
+          remains constant, though the value might still be mutable if it's an
+          object.
+        </li>
+      </ul>
+    </section>
+    <hr />
+    <section id="data-types">
+      <h1>2.Data Types</h1>
+      <ul>
+        <li><b>Primitive Types:</b></li>
+        <ul>
+          <li><b>String:</b>Represents textual data. e.g., "Hello, World!"</li>
+          <li>
+            <b>Number:</b>Represents both integer and floating-point numbers.
+            e.g., 42, 3.14
+          </li>
+          <li>
+            <b>Boolean:</b>Represents logical entities and can have two values:
+            true or false.
+          </li>
+          <li>
+            <b>Null:</b>Represents the intentional absence of any object value.
+          </li>
+          <li>
+            <b>Undefined:</b>Indicates that a variable has not been assigned a
+            value.
+          </li>
+          <li>
+            <b>Symbol:</b>Introduced in ES6, used to create unique identifiers
+            for objects.
+          </li>
+          <li>
+            <b>BigInt:</b>Allows representation of whole numbers larger than
+            2^53 - 1.
+          </li>
+        </ul>
+        <li><b>Non-primitive Types:</b></li>
+        <ul>
+          <li>
+            <b>Object:</b>Collections of key-value pairs. Objects can include
+            other objects, functions, and primitive values.
+          </li>
+          <li>
+            <b>Array</b>List-like objects used to store multiple values in a
+            single variable.
+          </li>
+        </ul>
+      </ul>
+    </section>
+    <hr />
+    <section>
+      <h1>3.Operators</h1>
+      <ul>
+        <h2>Details:</h2>
+        <ul>
+          <li><b>Arithmetic Operators:</b></li>
+          <ul>
+            <li><b>+</b> (Addition)</li>
+            <li><b>-</b> (Subtraction)</li>
+            <li><b>*</b> (Multiplication)</li>
+            <li><b> /</b> (Division)</li>
+            <li><b>%</b> (Modulus)</li>
+            <li><b>**</b> (Exponentiation, ES6)</li>
+          </ul>
+        </ul>
+        <li><b>Comparison Operators:</b></li>
+        <li>
+          <ul>
+            <li><b>== </b> (Equal to, loose equality)</li>
+            <li><b>=== </b> (Equal value and equal type, strict equality)</li>
+            <li><b>!= </b> (Not equal to, loose inequality)</li>
+            <li>
+              <b>!== </b> (Not equal value and not equal type, strict
+              inequality)
+            </li>
+            <li><b>&gt; </b> (Greater Than)</li>
+            <li><b>&lt; </b> (Smaller Than)</li>
+            <li><b>&gt;= </b> (Greater than Or equal)</li>
+            <li><b>&lt;= </b> (Smaller than Or equal)</li>
+          </ul>
+        </li>
+
+        <li><b>Logical Operators:</b></li>
+        <ul>
+          <li><b>&& </b> (Logical AND)</li>
+          <li><b>|| </b> (Logical OR)</li>
+          <li><b>! </b> (Logical NOT)</li>
+        </ul>
+        <li><b>Assignment Operators</b></li>
+        <ul>
+          <li><b>= </b> (Assignment)</li>
+          <li><b>+= </b> (Addition Assignment)</li>
+          <li><b>-= </b> (Subtraction assignment)</li>
+          <li><b>*= </b> (Multiplication assignment)</li>
+          <li><b>/= </b> (Division assignment)</li>
+          <li><b>%= </b> (Modulus assignment)</li>
+        </ul>
+      </ul>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+header {
+  background-color: #090a0b;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+  background: url(wp.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #3838389e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff; /* Bright blue */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.home {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 900;
+}
+.home span a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  bottom: 10px;
+}
+.home span a:visited {
+  color: white;
+}
